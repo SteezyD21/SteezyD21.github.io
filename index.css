@@ -47,11 +47,6 @@ header {
     color: #333;
 }
 
-.my-picture {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
 
 .Ninja-section {
     text-align: center;
@@ -100,12 +95,6 @@ header {
 .skills {
     list-style-type: none;
     margin: 5px 0;
-}
-
-.skill-image {
-    max-width: 30px;
-    max-height: 30px;
-    margin-right: 5px;
 }
 
 .portfolio-section {
