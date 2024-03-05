@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Douglas' Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/> <!-- External CSS file for styling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
@@ -16,165 +16,86 @@
             <a href="#portfolio" class="nav-pill">Portfolio</a>
             <a href="#skills" class="nav-pill">Skills</a>
             <a href="#contacts" class="nav-pill">Contact</a>
-            <a " href="https://drive.google.com/file/d/1YOQmUP7DCxD7C3kY9Mbs7m9EVyxeigLt/view?usp=sharing" 
-                target="_blank" style="background-color: transparent; color: white; text-decoration: none;"
-                >View my Resume</a>
-
+            <a href="https://drive.google.com/file/d/1YOQmUP7DCxD7C3kY9Mbs7m9EVyxeigLt/view?usp=sharing"
+                target="_blank" class="nav-pill">View my Resume</a>
         </nav>
     </header>
 
     <main>
-        <div class="welcome-space">
-            <h1>WELCOME</h1>
-        </div>
-        <div class="Ninja-section">
-            <p style="font-weight: bold;">
-                Hello World!, I'm Douglas Aphane.
-            </p>
-            <p1 style="font-weight: bold;">
-                And I'm a curious Web Dev!
-            </p1>
-        </div>
-
-        <!--About Me section-->
-        <div id="about" class="section">
-            <h1 style="margin-bottom: 60px; margin-right: 250px;">About
-                Me</h1>
-            <h2 class="about-me-para" style="padding-left: 20px;">
-                <p style="font-weight: bold;">
-                    Web development student dedicated to mastering
-                    the art of coding
-                    and design. Proficient in front-end technologies
-                    like HTML, CSS,
-                    and JavaScript, with a focus on creating
-                    engaging user experiences.
-                    Eager to contribute fresh perspectives and
-                    skills to the ever-evolving
-                    world of web development.
-                </p>
-            </h2>
-        </div>
-
-        <!--Skills Section-->
-        <div id="skills" class="section">
-            <h1 class="section-heading"><i aria-hidden="true"></i>Skills</h1>
-            <div class="section-content">
-                <div class="skill-group-card">
-                    <div class="skill-group-heading">
-                        <h2>Frontend</h2>
-                    </div>
-                    <div class="skill-group-content">
-                        <ul>
-                            <li class="skills" style="font-weight: bold;">HTML</li>
-                            <li class="skills" style="font-weight: bold;">CSS</li>
-                            <li class="skills" style="font-weight: bold;">Javascript</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skill-group-card">
-                    <div class="skill-group-heading">
-                        <h2>Version Control Systems</h2>
-                    </div>
-                    <div class="skill-group-content">
-                        <ul>
-                            <li>
-
-
-                                <span class="skill-text" style="font-weight: bold;">Git</span>
-                            </li>
-                            <li>
-
-
-                                <span class="skill-text" style="font-weight: bold;">GitHub</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skill-group-card">
-                    <div class="skill-group-heading">
-                        <h2>IDEs</h2>
-                    </div>
-                    <div class="skill-group-content">
-                        <ul>
-                            <li>
-                                <span class="skill-text" style="font-weight: bold;">
-                                    Visual Studio Code</span>
-                            </li>
-                            <li>
-                                <span class="skill-text" style="font-weight: bold;">Jupyter
-                                    Notebook</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="skill-group-card">
-                    <div class="skill-group-heading">
-                        <h2>Technologies</h2>
-                    </div>
-                    <div class="skill-group-content">
-                        <ul>
-                            <li>
-
-
-                                <span class="skill-text" style="font-weight: bold;">Kali
-                                    Linux</span>
-                            </li>
-                            <li>
-
-
-                                <span class="skill-text" style="font-weight: bold;">Linux
-                                    mint</span>
-                            </li>
-                            <li>
-
-
-                                <span class="skill-text" style="font-weight: bold;">WSL</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <section id="welcome" class="welcome-section"> <!-- Semantic section for welcome content -->
+            <div class="welcome-space">
+                <h1>WELCOME</h1>
             </div>
-        </div>
+            <div class="introduction-section">
+                <p>Hello World!, I'm Douglas Aphane.</p>
+                <p>And I'm a curious Web Dev!</p>
+            </div>
+        </section>
 
-        <!--Portfolio Section-->
-        <section id="portfolio" class="portfolio-section">
-            <h style="font-weight: bolder;", style="font-size: larger;">Portfolio</h>
-            <p style="font-weight: bold;">Portfolio coming soon!</p>
+        <!-- About Me section -->
+        <section id="about" class="section">
+            <h2>About Me</h2> <!-- Changed h1 to h2 for semantic structure -->
+            <p>
+                Web development student dedicated to mastering the art of coding
+                and design. Proficient in front-end technologies like HTML, CSS,
+                and JavaScript, with a focus on creating engaging user experiences.
+                Eager to contribute fresh perspectives and skills to the ever-evolving
+                world of web development.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-heading">Skills</h2>
+            <div class="section-content">
+                <!-- Skill groups -->
+                <div class="skill-group-card">
+                    <h3>Frontend</h3>
+                    <p class="skill">HTML</p>
+                    <p class="skill">CSS</p>
+                    <p class="skill">JavaScript</p>
+                </div>
+        
+                <div class="skill-group-card">
+                    <h3>Version Control Systems</h3>
+                    <p class="skill">Git</p>
+                    <p class="skill">GitHub</p>
+                </div>
+        
+                <div class="skill-group-card">
+                    <h3>IDEs</h3>
+                    <p class="skill">Visual Studio Code</p>
+                    <p class="skill">Jupyter Notebook</p>
+                </div>
+        
+                <div class="skill-group-card">
+                    <h3>Technologies</h3>
+                    <p class="skill">Kali Linux</p>
+                    <p class="skill">Linux Mint</p>
+                    <p class="skill">WSL</p>
+                </div>
+                <!-- End of skill groups -->
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <h2 class="section-heading">Portfolio</h2>
+            <p>Portfolio coming soon!</p>
         </section>
 
         <!-- Contact Section -->
-        <section id="contacts">
-            <h1 class="section-heading"><iss-card" aria-hidden="true"></i>Contact</h1>
-            <div class="section-content">
-                <div class="contact-card">
-                    <div class="contact-info">
-                        <h2 class="contact-heading">Contact Info</h2>
-                        <div class="contact-info-content">
-                            <p><i cla" aria-hidden="true" style="font-weight: bold;"></i>062 507 2492</p>
-                            <p><i claope" aria-hidden="true"></i style="font-weight: bold;">douglas.aphane@umuzi.org</p>
-                        </div>
-                        <div class="social-media-content">
-                            <a target="_blank" href="https://web.facebook.com/messykruger17/"><i ok"
-                                    aria-hidden="true"></i style="font-weight: bold;">facebook</a>
-                            <a target="_blank" href="https://github.com/SteezyD21">
-                                <ib" aria-hidden="true"></i style="font-weight: bold;">GitHub
-                            </a>
-                            <a target="_blank" href="https://www.linkedin.com/in/douglas-tshenolo-aphane-55202a2aa/"><i
-                                    din" aria-hidden="true" style="font-weight: bold;"></i>LinkedIn</a>
-                        </div>
-                    </div>
-                    <footer class="main-footer">
-                        <div class="footer-about">
-                            <p style="font-weight: bold;">© 2024: Douglas Aphane</p>
-                        </div>
-                    </footer>
-                </div>
-            </div>
+        <section id="contacts" class="section">
+            <h2 class="section-heading">Contact</h2>
+            <!-- Contact info -->
         </section>
     </main>
+
+    <footer>
+        <div class="main-footer">
+            <p>&copy; 2024: Douglas Aphane</p>
+        </div>
+    </footer>
 
 </body>
 
