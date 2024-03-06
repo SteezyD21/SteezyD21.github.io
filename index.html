@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Douglas' Portfolio</title>
+    <script src="javascript.js"></script>
     <link rel="stylesheet" href="index.css"> <!-- External CSS file for styling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
 </head>
 
 <body>
 
     <header>
         <nav class="navigation-bar">
-            <a href="#about" class="nav-pill">About Me</a>
-            <a href="#portfolio" class="nav-pill">Portfolio</a>
-            <a href="#skills" class="nav-pill">Skills</a>
-            <a href="#contacts" class="nav-pill">Contact</a>
+            <button id="dark-mode-toggle">Dark Mode</button>
+        
+            <a href="#welcome" class="nav-pill"><i class="fas fa-home"></i> Home</a>
+            <a href="#about" class="nav-pill"><i class="fas fa-user"></i> About Me</a>
+           
+           
+            <a href="#skills" class="nav-pill"><i class="fas fa-code"></i> Skills</a>
+            <a href="#portfolio" class="nav-pill dropbtn"><i class="fas fa-briefcase"></i> Portfolio</a>
+            <a href="#contacts" class="nav-pill"><i class="fas fa-envelope"></i> Contact</a>
             <a href="https://drive.google.com/file/d/1YOQmUP7DCxD7C3kY9Mbs7m9EVyxeigLt/view?usp=sharing"
-                target="_blank" class="nav-pill">View my Resume</a>
+                target="_blank" class="nav-pill"><i class="far fa-file-alt"></i> View my Resume</a>
         </nav>
     </header>
 
@@ -87,7 +94,22 @@
         <!-- Contact Section -->
         <section id="contacts" class="section">
             <h2 class="section-heading">Contact</h2>
-            <!-- Contact info -->
+            <div class="section-content">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Contact Info</h3>
+                        <div class="contact-info-content">
+                            <p><i class="fas fa-phone"></i> 062 507 2492</p>
+                            <p><i class="fas fa-envelope"></i> douglas.aphane@umuzi.org</p>
+                        </div>
+                        <div class="social-media-content">
+                            <a href="https://web.facebook.com/messykruger17/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                            <a href="https://github.com/SteezyD21" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/douglas-tshenolo-aphane-55202a2aa/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
