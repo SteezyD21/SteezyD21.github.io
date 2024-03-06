@@ -12,11 +12,12 @@ header {
     color: #fff;
     padding: 20px;
     text-align: center;
-}
-.dark-mode {
-    background-color: #333;
-    color: #fff;
+} 
 
+.dark {
+    /* Add styles for dark mode here */
+    background-color: #333 !important;
+    color: #fff !important;
 }
 
 /* Navigation Bar Styles */
