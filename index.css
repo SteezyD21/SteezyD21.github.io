@@ -110,6 +110,7 @@ main {
 
 .contact-heading {
     margin-top: 0;
+    
 }
 
 .contact-info-content p {
@@ -122,6 +123,7 @@ main {
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
+    
 }
 
 .social-media-content a:hover {
