@@ -13,8 +13,14 @@
   <body class="dark-mode">
     <header class="dark-mode">
       <nav class="navigation-bar">
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
         <button id="dark-mode-toggle" onclick="darkMode()" style="background: none !important; border-width: 0px; cursor: pointer;"><img src="https://clipart-library.com/new_gallery/12-123586_png-file-svg-moon-svg.png" style="height: 20px;" alt=""></button>
-
+        <div class="nav-links" id="navLinks">
         <a href="#welcome" class="nav-pill"><i class="fas fa-home"></i> Home</a>
         <a href="#about" class="nav-pill"
           ><i class="fas fa-user"></i> About Me</a
@@ -35,6 +41,7 @@
           class="nav-pill"
           ><i class="far fa-file-alt"></i> View my Resume</a
         >
+      </div>
       </nav>
     </header>
 
@@ -73,6 +80,12 @@
             <p class="skill">HTML</p>
             <p class="skill">CSS</p>
             <p class="skill">JavaScript</p>
+          </div>
+          <div class="skill-group-card dark-mode">
+            <h3>Backend</h3>
+            <p class="skill">Node.js</p>
+            <p class="skill">Docker</p>
+            <p class="skill">PostgreSQL</p>
           </div>
 
           <div class="skill-group-card dark-mode">
@@ -136,7 +149,8 @@
     </main>
 
     <footer class="dark-mode">
-      <div class="main-footer dark-mode">
+      <div class="main-footer dark-mode"
+      style="text-align: center;">
         <p>&copy; 2024: Douglas Aphane</p>
       </div>
     </footer>

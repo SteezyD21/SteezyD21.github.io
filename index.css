@@ -94,6 +94,7 @@ main {
 
 .skill-group-card h3 {
     margin-top: 0;
+    text-align: center;
 }
 
 .skill {
@@ -106,6 +107,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-indent: 80px;
 }
 
 .contact-heading {
@@ -142,14 +144,41 @@ main {
     }
 }
 
-/* Responsive Design */
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .navigation-bar {
+    .nav-links {
+        display: display-box; /* Hide navigation links by default */
         flex-direction: column;
         align-items: center;
+        background-color: #333; /* Background color for the dropdown menu */
+        position: absolute;
+        width: 100%;
+        top: 60px; /* Adjust top position to account for header height */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Display navigation links when active */
     }
 
     .nav-pill {
-        margin: 10px 0;
+        padding: 10px 20px;
+        text-align: center;
+        width: 100%; /* Make navigation links full width */
+    }
+
+    /* Styling for hamburger icon */
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 5px;
+        background-color: #fff;
+        margin: 3px 0;
+        transition: 0.4s;
     }
 }
