@@ -15,7 +15,7 @@ header {
 } 
 
 .dark {
-    /* Add styles for dark mode here */
+   
     background-color: #333 !important;
     color: #fff !important;
 }
@@ -25,11 +25,11 @@ header {
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 1000; /* Increase the z-index value */
+    z-index: 1000;
     position: fixed;
-    width: 100%;
+    width: 110%;
     overflow: hidden;
-    background-color: aliceblue; /* Add background color */
+    background-color: aliceblue;
 }
 
 .nav-pill {
@@ -107,7 +107,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-indent: 80px;
+    padding: 0%;
 }
 
 .contact-heading {
@@ -146,39 +146,53 @@ main {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-    .nav-links {
-        display: display-box; /* Hide navigation links by default */
-        flex-direction: column;
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: auto 1fr; 
         align-items: center;
-        background-color: #333; /* Background color for the dropdown menu */
-        position: absolute;
-        width: 100%;
-        top: 60px; /* Adjust top position to account for header height */
-        left: 0;
-    }
-
-    .nav-links.active {
-        display: flex; /* Display navigation links when active */
-    }
-
-    .nav-pill {
+        background-color: aliceblue;
         padding: 10px 20px;
-        text-align: center;
-        width: 100%; /* Make navigation links full width */
     }
 
-    /* Styling for hamburger icon */
-    .menu-icon {
+    .menu-toggle {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
+        padding: 10px;
+        grid-column: 1;
     }
 
     .bar {
         width: 25px;
-        height: 5px;
+        height: 3px;
         background-color: #fff;
-        margin: 3px 0;
+        margin: 4px 0;
         transition: 0.4s;
+    }
+
+    .nav-links {
+        display: none;
+        grid-column: 2;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        background-color: #555;
     }
 }
