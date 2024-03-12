@@ -155,6 +155,7 @@ main {
     }
 
     .menu-toggle {
+        background-color: #555;
         display: flex;
         flex-direction: column;
         justify-content: center;
