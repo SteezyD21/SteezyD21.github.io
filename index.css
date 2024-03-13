@@ -27,7 +27,7 @@ header {
     justify-content: center;
     z-index: 1000;
     position: fixed;
-    width: 110%;
+    width: 100%;
     overflow: hidden;
     background-color: aliceblue;
 }
@@ -149,13 +149,13 @@ main {
     .navigation-bar {
         display: grid;
         grid-template-columns: auto 1fr; 
-        align-items: center;
+        align-items: start;
         background-color: aliceblue;
         padding: 10px 20px;
     }
 
     .menu-toggle {
-        background-color: #555;
+        filter: brightness(0);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -164,15 +164,15 @@ main {
         padding: 10px;
         grid-column: 1;
     }
-
+    
     .bar {
         width: 25px;
         height: 3px;
-        background-color: #fff;
+        background-color: #110a0a;
         margin: 4px 0;
         transition: 0.4s;
     }
-
+    
     .nav-links {
         display: none;
         grid-column: 2;
@@ -195,5 +195,12 @@ main {
 
     .nav-links a:hover {
         background-color: #555;
+        
+    }
+    .contact-info-content p,
+    .social-media-content  a{
+        color: #fff; 
     }
 }
+}
+
