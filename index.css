@@ -198,9 +198,14 @@ main {
         
     }
     .contact-info-content p,
-    .social-media-content  a{
-        color: #fff; 
+    .social-media-content a {
+        color: #000; /* Adjust text color to black for better visibility in light mode */
+    }
+
+    .dark-mode .contact-info-content p,
+    .dark-mode .social-media-content a {
+        color: #fff; /* Adjust text color to white for better visibility in dark mode */
     }
 }
-}
+
 
