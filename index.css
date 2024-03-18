@@ -118,8 +118,16 @@ main {
 
 .contact-info-content p {
     margin: 5px 0;
-    
+    font-weight: bold;
+    color: purple;
 }
+  .contact-info-content a {
+    color: purple;
+    text-decoration: none;
+    font-weight: bold;
+  }
+    
+
 
 .social-media-content a {
     display: inline-block;
