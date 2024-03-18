@@ -19,7 +19,12 @@ header {
     background-color: #333 !important;
     color: #fff !important;
 }
-
+#dark-mode-toggle{
+    background: none !important; 
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
 /* Navigation Bar Styles */
 .navigation-bar {
     top: 0;
@@ -119,10 +124,10 @@ main {
 .contact-info-content p {
     margin: 5px 0;
     font-weight: bold;
-    color: purple;
+    color: darkorchid;
 }
   .contact-info-content a {
-    color: purple;
+    color: darkorchid;
     text-decoration: none;
     font-weight: bold;
   }
@@ -156,7 +161,7 @@ main {
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 921px) {
     .navigation-bar {
         display: grid;
         grid-template-columns: auto 1fr; 
@@ -175,6 +180,23 @@ main {
         padding: 10px;
         grid-column: 1;
     }
+    #dark-mode-toggle{
+        flex-direction: column ;
+        align-items: center ;
+        justify-content: center;
+        cursor: pointer;
+        margin: 5;
+        padding: 5px;
+        margin-left:25px ;
+        grid-column: 2;
+        width: 25px;
+        height: auto;
+        border: #000;
+        font-size: x-large;
+      
+        
+    }
+
     
     .bar {
         width: 25px;
