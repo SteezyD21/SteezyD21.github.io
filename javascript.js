@@ -13,14 +13,10 @@ function toggleMenu() {
     if (navLinks.classList.contains("active")) {
 
         document.addEventListener('click', closeMenuOnClickDocument);
-        document.addEventListener('click', closeMenuOnClickNavbar);
 
     } else {
         
         document.removeEventListener('click', closeMenuOnClickDocument);
-        document.removeEventListener('click', closeMenuOnClickDocument);
-
-
     }
 }
 
