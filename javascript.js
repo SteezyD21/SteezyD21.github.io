@@ -13,16 +13,22 @@ function toggleMenu() {
     if (navLinks.classList.contains("active")) {
 
         document.addEventListener('click', closeMenuOnClickDocument);
+        document.addEventListener('click', closeMenuOnClickNavbar);
+
     } else {
         
         document.removeEventListener('click', closeMenuOnClickDocument);
+        document.removeEventListener('click', closeMenuOnClickDocument);
+
+
     }
 }
 
 function closeMenuOnClickDocument(event) {
     var navLinks = document.getElementById("navLinks");
     var menuToggle = document.getElementById("menuToggle");
-    if (!navLinks.contains(event.target) && event.target !== menuToggle) {
+    if (navLinks.contains(event.target) && event.target !== menuToggle) {
         navLinks.classList.remove("active");
     }
 }
+
