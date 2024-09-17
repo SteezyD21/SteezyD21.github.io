@@ -1,0 +1,14 @@
+{
+  "name": "steezyd21.github.io",
+  "version": "1.0.0",
+  "description": "Below is the link to my repo: https://github.com/SteezyD21/SteezyD21.github.io",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Douglas Aphane",
+  "license": "ISC",
+  "dependencies": {
+    "tech-stack-icons": "^2.1.0"
+  }
+}
