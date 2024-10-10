@@ -178,7 +178,7 @@ img{
 
 .nav
 {
-    max-width: 968px;
+    max-width: 1200px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
@@ -1224,6 +1224,9 @@ img{
 
     .contact_inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .grid{
+        gap: 2rem;
     }
 }
 
